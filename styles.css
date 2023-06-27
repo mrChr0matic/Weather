@@ -103,6 +103,11 @@ a:hover{
 .search-items{
     width: 100%;
 }
+#form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
 .inp{
     background: none;
     border-style:none;
@@ -175,6 +180,13 @@ a:hover{
     }
     .inp{
         background: rgb(236, 230, 230);
+    }
+    .search{
+        width: 75%;
+    }
+    .submit{
+        margin: 0;
+        background: #fff;
     }
     html{
         padding: auto;
