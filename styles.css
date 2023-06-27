@@ -4,11 +4,9 @@ html {
     padding-top: 20px;
 }
 body{
-    background-image: url(images/01.jpg) ;
+    /* background-image: url(images/01.jpg) ; */
     background-size: cover;
-    position: relative;
-    margin: 0;
-    overflow: hidden;
+    height: 100vh;
     background-color: black;
 }
 
