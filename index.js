@@ -26,7 +26,7 @@ form.addEventListener("submit",(e)=>{
 });
 
 function weather(){
-   fetch('http://api.openweathermap.org/geo/1.0/direct?q='+tempo+'&appid=950ab1803732ab0b7a7ee86549b81a46')
+   fetch('https://api.openweathermap.org/geo/1.0/direct?q='+tempo+'&appid=950ab1803732ab0b7a7ee86549b81a46')
    .then(res=>res.json())
    .then(res=>{
       const lat=res[0].lat;
