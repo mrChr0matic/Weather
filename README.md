@@ -1,7 +1,6 @@
 <h1>Weather Website</h1>
-<hr>
 <h2>A website that gives weather information of a given location. Default location set to New Delhi.</h2>
-<h2>Features</h2><hr>
+<h2>Features</h2>
 <ul>
   <li>provide deatils about temperature, weather description,wind speed,humidity and clouds</li>
   <li>Feature that allows user to input location to get the weather data at the location</li>
