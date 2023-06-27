@@ -20,7 +20,6 @@ form.addEventListener("submit",(e)=>{
       return;
    }
    input_city.value="";
-   city_name.innerHTML=tempo;
    weather();
    e.preventDefault();
 });
@@ -35,6 +34,7 @@ function weather(){
       .then(response=>response.json())
       .then(response=>{
          console.log(response);
+         city_name.innerHTML=res[0].name;
          temp.innerHTML=response.main.temp+'°';
          descr.innerHTML=response.weather[0].description;
          const icon=response.weather[0].icon;
