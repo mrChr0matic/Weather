@@ -43,9 +43,7 @@ function weather(){
          wind.innerHTML=response.wind.speed+' Km/h';
          clouds.innerHTML=response.clouds.all;
          humidity.innerHTML=response.main.humidity+' g/m³'; 
-         const bgIMG= "images/"+ response.weather[0].icon[0]+response.weather[0].icon[1]+ ".jpg";
-         console.log(bgIMG);
-         document.getElementsByTagName('body')[0].style.backgroundImage= "url("+bgIMG+")";
+         photo();
       })
       .catch(()=>{
          alert("City Not Found ! Try again")
@@ -53,6 +51,27 @@ function weather(){
    })
    .catch(()=>{
       alert("City Not Found ! Try again")
+   }) 
+}
+
+function photo(){
+   console.log(tempo);
+   const query="https://api.unsplash.com/search/photos?query="
+   const appid="&client_id=VvHIumtepHdQWB5mYRgFLw0-p0lvanlxUv-NZCw_5Fk";
+   fetch(query+ tempo +appid)
+   .then(response=>response.json())
+   .then(response=>{
+      console.log(response);
+      var randnum=Math.floor(Math.random()*10);
+      console.log(randnum);
+      const bgURL=response.results[randnum].urls.raw;
+      console.log(bgURL);
+      document.getElementsByTagName('body')[0].style.backgroundImage= "url("+bgURL+")";
+      document.getElementsByTagName('body')[0].style.backgroundPosition="10%";
    })
-   
+   .catch(()=>{
+      document.getElementsByTagName('body')[0].style.backgroundImage= "url('images/01.jpg')";
+      console.log("No Image")
+   })
+   return;
 }
