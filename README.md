@@ -16,3 +16,4 @@
   <li>OpenWeatherMap API</li>
 </ul>
 <h2><a href="https://mrchr0matic.github.io/Weather/"> click here</a> to view page.</h2>
+<p>PS! The browser may block the API request. To fix this got to page settings and allow unsafe content.</p>
