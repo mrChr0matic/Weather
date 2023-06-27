@@ -15,4 +15,4 @@
   <li>Javascript</li>
   <li>OpenWeatherMap API</li>
 </ul>
-<h2><a href="https://mrchr0matic.github.io/Weather/"> click here</a><h3> to view page.</h3></h2>
+<h2><a href="https://mrchr0matic.github.io/Weather/"> click here</a> to view page.</h2>
